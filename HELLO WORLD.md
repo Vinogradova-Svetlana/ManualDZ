@@ -14,6 +14,20 @@
 * git merge "Name" слияние веток
 * git branch -d naem удалить ветку (используется, если её изменения уже влиты
  в главную ветку)
-* git checkout -b "naem" создание и переход по веткам
+* git checkout -b "name" создание и переход по веткам
 * git branch список веток
 * git log --graph графический журнал изменений
+## 3. Работа с удаленным репозиторием
+## Для создание удаленного репозитория
+* echo ***название репозитория на github*** README.md
+* git init
+* git add README.md
+* git commit -m "first commit"
+* git branch -M main
+* git remote add origin -***ссылка на репозиторий из github***
+* git push -u origin main
+## Для переноса готового репозитория на github 
+* git remote add origin -***ссылка на удаленный репозиторий***
+* git branch -M main
+* git push -u origin main
+
